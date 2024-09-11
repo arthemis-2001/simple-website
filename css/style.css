@@ -67,6 +67,7 @@ body {
   list-style-type: none;
   position: absolute;
   display: none;
+  z-index: 3;
 }
 
 .drop > li > a {
@@ -100,10 +101,83 @@ body {
 .content-holder .content {
   padding: 25px;
   background-color: white;
-  width: 80%
+  width: 80%;
 }
 
 .content-holder .content h1 ~ h2 {
   font-size: 1em;
   color: darkgray;
+}
+
+.sidebar {
+  padding: 25px;
+  width: 20%;
+}
+
+.sidebar .widget h3 {
+  color: white;
+}
+
+.sidebar .widget ul,
+.footer-widget ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sidebar .widget ul > li > a,
+.footer-widget ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar .widget ul > li > a:hover {
+  color: black;
+}
+
+.footer-widget-holder {
+  display: flex;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  justify-content: space-around;
+}
+
+.footer-widget {
+  padding: 25px;
+  font-size: small;
+}
+
+.site-footer {
+  background-color: black;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0px;
+}
+
+/* SERVICES AND PRODUCTS */
+.services-holder,
+.products-holder {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.service,
+.product {
+  padding: 20px;
+  border: 1px solid gainsboro;
+}
+
+.service a,
+.product a {
+  text-decoration: none;
+  color: teal;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
 }
