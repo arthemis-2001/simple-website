@@ -38,10 +38,6 @@
         </div>
       </header>
       <nav class="main-menu">
-        <ul class="mobile-menu">
-          <li><a href="#">Menu</a></li>
-          <li><a href="#" class="toggler">+</a></li>
-        </ul>
         <ul>
           <li><a href="#">Home</a></li>
           <li>
@@ -57,48 +53,64 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <section class="banner-slider">
-        <ul id="adaptive">
-          <li><img src="https://placehold.co/1000x350" alt="" /></li>
-          <li><img src="https://placehold.co/1000x350" alt="" /></li>
-          <li><img src="https://placehold.co/1000x350" alt="" /></li>
-        </ul>
+      <section class="gmap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163931.36872919046!2d14.300475174738095!3d50.059552495338366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPraha!5e0!3m2!1scs!2scz!4v1726088448218!5m2!1scs!2scz"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
-      <section class="content-holder">
-        <main class="content">
-          <h1>Main Heading for site</h1>
-          <h2>Sub Heading for site</h2>
+      <section class="contact-details">
+        <div class="contact-form">
+          <form action="" method="post">
+            <label for="c_name">
+              Name:
+              <input type="text" name="c_name" id="c_name" placeholder="Name" />
+            </label>
+            <label for="c_email">
+              Email:
+              <input
+                type="email"
+                name="c_email"
+                id="c_email"
+                placeholder="Email"
+              />
+            </label>
+            <label for="c_phone">
+              Phone:
+              <input
+                type="tel"
+                name="c_phone"
+                id="c_phone"
+                placeholder="Phone"
+              />
+            </label>
+            <label for="c_message">
+              Message:
+              <textarea
+                name="c_message"
+                id="c_message"
+                cols="20"
+                rows="5"
+              ></textarea>
+            </label>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="time-contact">
+          <h3>Timings</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
-            obcaecati dolorem doloremque laudantium! Eius consequatur labore
-            commodi accusantium vel repellat qui natus veniam accusamus! Ratione
-            sit nesciunt facere deserunt iure.
+            <strong>Mon - Sat</strong> <time datetime="09:00">09:00AM</time> -
+            <time datetime="17:00">05:00PM</time>
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ad
-            pariatur obcaecati, reiciendis blanditiis temporibus tempora,
-            delectus enim ullam quo numquam corrupti necessitatibus inventore?
-            Nihil officia ea rem eum perspiciatis?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
-            aliquam ipsa dicta deserunt modi fugit in corporis quam nisi saepe,
-            tempore sint sunt odit adipisci repellat dolorem voluptatum!
-            Consectetur, aperiam.
-          </p>
-        </main>
-        <aside class="sidebar">
-          <div class="widget">
-            <h3>Follow us</h3>
-            <ul>
-              <li><a href="#">Hoofbook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Ponygram</a></li>
-            </ul>
-          </div>
-        </aside>
+          <hr />
+          <h3>Contact</h3>
+          <p><a href="mailto:dazzlingrarity@pmail.com">dazzlingrarity@pmail.com</a></p>
+        </div>
       </section>
+
       <section class="footer-widget-holder">
         <div class="footer-widget">
           <a href="#">
@@ -155,11 +167,6 @@
           slideMargin: 0,
           loop: true,
         });
-      });
-
-      $('.toggler').click(function () {
-        $('.main-menu > ul:nth-of-type(2)').toggle();
-        $('.drop').css({'display': 'block', 'position': 'relative'});
       });
     </script>
   </body>
